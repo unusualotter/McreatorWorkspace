@@ -1,0 +1,13 @@
+{
+  "group": "nh",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:ender_log"
+    }
+  ],
+  "result": {
+    "item": "nh:ender_planks",
+    "count": 4
+  }
+}

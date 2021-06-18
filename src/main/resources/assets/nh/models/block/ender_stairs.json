@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "nh:blocks/ender_planks",
+    "top": "nh:blocks/ender_planks",
+    "side": "nh:blocks/ender_planks"
+  }
+}

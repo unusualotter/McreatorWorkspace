@@ -1,0 +1,290 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "SiliumIngot",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_ingot"
+    },
+    {
+      "name": "SiliumPickaxe",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_pickaxe"
+    },
+    {
+      "name": "SiliumAxe",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_axe"
+    },
+    {
+      "name": "SiliumSword",
+      "type": "tool",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_sword"
+    },
+    {
+      "name": "SiliumShovel",
+      "type": "tool",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_shovel"
+    },
+    {
+      "name": "SiliumHoe",
+      "type": "tool",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_hoe"
+    },
+    {
+      "name": "SiliumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_pickaxe_recipe"
+    },
+    {
+      "name": "SiliumAxeRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_axe_recipe"
+    },
+    {
+      "name": "SiliumSwordRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_sword_recipe"
+    },
+    {
+      "name": "SiliumShovelRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_shovel_recipe"
+    },
+    {
+      "name": "SiliumHoeRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "silium_hoe_recipe"
+    },
+    {
+      "name": "EnderWood",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_wood"
+    },
+    {
+      "name": "EnderLog",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_log"
+    },
+    {
+      "name": "EnderPlanks",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_planks"
+    },
+    {
+      "name": "EnderLeaves",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_leaves"
+    },
+    {
+      "name": "EnderStairs",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_stairs"
+    },
+    {
+      "name": "EnderSlab",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_slab"
+    },
+    {
+      "name": "EnderFence",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fence"
+    },
+    {
+      "name": "EnderFenceGate",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fence_gate"
+    },
+    {
+      "name": "EnderItemsTag",
+      "type": "tag",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_items_tag"
+    },
+    {
+      "name": "EnderWoodRecipe",
+      "type": "recipe",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_wood_recipe"
+    },
+    {
+      "name": "EnderPlanksRecipe",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_planks_recipe"
+    },
+    {
+      "name": "EnderStairsRecipe",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_stairs_recipe"
+    },
+    {
+      "name": "EnderSlabRecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_slab_recipe"
+    },
+    {
+      "name": "EnderFenceRecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fence_recipe"
+    },
+    {
+      "name": "EnderFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_fence_gate_recipe"
+    },
+    {
+      "name": "EnderStickRecipe",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_stick_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.nh.silium_hoe": "Silium Hoe",
+      "block.nh.ender_stairs": "Ender Stairs",
+      "item.nh.silium_ingot": "Silium Ingot",
+      "block.nh.ender_wood": "Ender Wood",
+      "block.nh.ender_leaves": "Ender Leaves",
+      "item.nh.silium_pickaxe": "Silium Pickaxe",
+      "block.nh.ender_fence": "Ender Fence",
+      "item.nh.silium_axe": "Silium Axe",
+      "item.nh.silium_shovel": "Silium Shovel",
+      "block.nh.ender_fence_gate": "Ender Fence Gate",
+      "item.nh.silium_sword": "Silium Sword",
+      "block.nh.ender_planks": "Ender Planks",
+      "block.nh.ender_log": "Ender Log",
+      "block.nh.ender_slab": "Ender Slab"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "nh",
+    "modName": "New Horizons",
+    "version": "1.0.0",
+    "author": "Korbin, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.nh",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

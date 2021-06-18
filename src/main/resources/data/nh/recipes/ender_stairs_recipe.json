@@ -1,0 +1,33 @@
+{
+  "group": "nh",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "nh:ender_planks"
+    },
+    "3": {
+      "item": "nh:ender_planks"
+    },
+    "4": {
+      "item": "nh:ender_planks"
+    },
+    "6": {
+      "item": "nh:ender_planks"
+    },
+    "7": {
+      "item": "nh:ender_planks"
+    },
+    "8": {
+      "item": "nh:ender_planks"
+    }
+  },
+  "result": {
+    "item": "nh:ender_stairs",
+    "count": 4
+  }
+}

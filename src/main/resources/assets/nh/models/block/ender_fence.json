@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "nh:blocks/ender_planks",
+    "particle": "nh:blocks/ender_planks"
+  }
+}
