@@ -1,0 +1,29 @@
+{
+  "group": "nh",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "nh:silium_ingot"
+    },
+    "1": {
+      "item": "nh:silium_ingot"
+    },
+    "2": {
+      "item": "nh:silium_ingot"
+    },
+    "3": {
+      "item": "nh:silium_ingot"
+    },
+    "5": {
+      "item": "nh:silium_ingot"
+    }
+  },
+  "result": {
+    "item": "nh:silium_armor_helmet",
+    "count": 1
+  }
+}

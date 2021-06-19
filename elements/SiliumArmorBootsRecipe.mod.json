@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SiliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SiliumIngot"
+      },
+      {
+        "value": "CUSTOM:SiliumIngot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:SiliumIngot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SiliumArmor.boots"
+    },
+    "name": "silium_armor_boots_recipe",
+    "namespace": "mod"
+  }
+}

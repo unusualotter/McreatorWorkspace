@@ -1,0 +1,58 @@
+{
+  "_fv": 18,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "silium_head",
+    "enableBody": true,
+    "textureBody": "silium_body",
+    "enableLeggings": true,
+    "textureLeggings": "silium_leggings",
+    "enableBoots": true,
+    "textureBoots": "silium_boots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "silium",
+    "helmetName": "Silium Helmet",
+    "bodyName": "Silium Chestplate",
+    "leggingsName": "Silium Leggings",
+    "bootsName": "Silium Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 118,
+    "damageValueHelmet": 16,
+    "damageValueBody": 40,
+    "damageValueLeggings": 47,
+    "damageValueBoots": 16,
+    "enchantability": 71,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SiliumIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nh:blocks/siliumoretexture",
+    "up": "nh:blocks/siliumoretexture",
+    "north": "nh:blocks/siliumoretexture",
+    "east": "nh:blocks/siliumoretexture",
+    "south": "nh:blocks/siliumoretexture",
+    "west": "nh:blocks/siliumoretexture",
+    "particle": "nh:blocks/siliumoretexture"
+  }
+}
