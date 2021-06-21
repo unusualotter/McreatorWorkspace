@@ -6,7 +6,7 @@
     "textureStill": "fridgium",
     "textureFlowing": "fridgium",
     "luminosity": 1,
-    "density": -800,
+    "density": 800,
     "viscosity": 500,
     "isGas": true,
     "type": "WATER",

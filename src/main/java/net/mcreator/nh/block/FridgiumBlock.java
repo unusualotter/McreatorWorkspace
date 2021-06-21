@@ -77,7 +77,7 @@ public class FridgiumBlock extends NhModElements.ModElement {
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
 				FluidAttributes.builder(new ResourceLocation("nh:blocks/fridgium"), new ResourceLocation("nh:blocks/fridgium")).luminosity(1)
-						.density(-800).viscosity(500).gaseous()).bucket(() -> bucket).block(() -> block);
+						.density(800).viscosity(500).gaseous()).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("fridgium");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("fridgium_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
