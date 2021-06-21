@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "nh:block/end_village_dimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "nh:block/end_village_dimension_portal_ns"
+    }
+  }
+}
