@@ -106,19 +106,30 @@ public class SiliumOreBlock extends NhModElements.ModElement {
 					boolean dimensionCriteria = false;
 					if (dimensionType == World.THE_END)
 						dimensionCriteria = true;
+					if (dimensionType == RegistryKey.getOrCreateKey(Registry.WORLD_KEY, new ResourceLocation("nh:end_village_dimension")))
+						dimensionCriteria = true;
+					if (dimensionType == World.OVERWORLD)
+						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
 			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 3)).range(256)
-					.square().func_242731_b(2);
+					.square().func_242731_b(4);
 			event.getRegistry().register(feature.setRegistryName("silium_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("nh:silium_ore"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("nh:end_biome").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("the_end").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES).add(() -> configuredFeature);
 	}
 }
