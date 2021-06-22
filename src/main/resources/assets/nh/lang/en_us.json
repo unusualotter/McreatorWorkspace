@@ -1,6 +1,6 @@
 {
-  "item.nh.silium_hoe": "Silium Hoe",
   "item.nh.end_villager_spawn_egg": "End Villager Spawn Egg",
+  "item.nh.silium_hoe": "Silium Hoe",
   "item.nh.silium_ingot": "Silium Ingot",
   "item.nh.end_village_dimension": "End Village Dimension Portal Igniter",
   "item.nh.silium_armor_boots": "Silium Boots",
@@ -13,6 +13,7 @@
   "item.nh.silium_axe": "Silium Axe",
   "item.nh.fridgium_bucket": "Fridgium Bucket",
   "item.nh.silium_shovel": "Silium Shovel",
+  "block.nh.fridgium_stone": "Fridgium Stone",
   "block.nh.ender_fence_gate": "Ender Fence Gate",
   "item.nh.silium_sword": "Silium Sword",
   "biome.nh.end_biome": "End Forest",
