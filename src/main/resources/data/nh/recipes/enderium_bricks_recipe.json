@@ -1,0 +1,26 @@
+{
+  "group": "nh",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "nh:enderium"
+    },
+    "1": {
+      "item": "nh:enderium"
+    },
+    "2": {
+      "item": "nh:enderium"
+    },
+    "3": {
+      "item": "nh:enderium"
+    }
+  },
+  "result": {
+    "item": "nh:enderium_bricks",
+    "count": 1
+  }
+}
