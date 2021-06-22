@@ -555,6 +555,24 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lead_armor_boots_recipe"
+    },
+    {
+      "name": "EnderApple",
+      "type": "food",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_apple"
+    },
+    {
+      "name": "EnderAppleFruitBlock",
+      "type": "block",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ender_apple_fruit_block"
     }
   ],
   "variable_elements": [],
@@ -593,8 +611,10 @@
       "block.nh.silium_ore": "Silium Ore",
       "item.nh.lead_sword": "Lead Sword",
       "item.nh.lead_armor_helmet": "Lead Helmet",
+      "item.nh.ender_apple": "Ender Apple",
       "block.nh.ender_fence": "Ender Fence",
       "item.nh.lead_pickaxe": "Lead Pickaxe",
+      "block.nh.ender_apple_fruit_block": "Ender Apple Fruit Block",
       "item.nh.lead_ingot": "Lead",
       "item.nh.silium_armor_leggings": "Silium Leggings",
       "block.nh.ender_planks": "Ender Planks",

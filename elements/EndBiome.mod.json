@@ -63,7 +63,7 @@
       "value": "Blocks.AIR"
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:EnderAppleFruitBlock"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,

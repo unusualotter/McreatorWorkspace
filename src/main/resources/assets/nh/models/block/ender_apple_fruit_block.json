@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "nh:blocks/enderapplefruitblock",
+    "up": "nh:blocks/enderapplefruitblock",
+    "north": "nh:blocks/enderapplefruitblock",
+    "east": "nh:blocks/enderapplefruitblock",
+    "south": "nh:blocks/enderapplefruitblock",
+    "west": "nh:blocks/enderapplefruitblock",
+    "particle": "nh:blocks/enderapplefruitblock"
+  }
+}

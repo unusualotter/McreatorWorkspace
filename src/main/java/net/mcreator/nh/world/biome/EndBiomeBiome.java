@@ -44,6 +44,7 @@ import net.minecraft.block.BlockState;
 
 import net.mcreator.nh.block.EnderLogBlock;
 import net.mcreator.nh.block.EnderLeavesBlock;
+import net.mcreator.nh.block.EnderAppleFruitBlockBlock;
 import net.mcreator.nh.NhModElements;
 
 import java.util.Set;
@@ -168,7 +169,7 @@ public class EndBiomeBiome extends NhModElements.ModElement {
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
 							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = Blocks.AIR.getDefaultState();
+								BlockState blockstate = EnderAppleFruitBlockBlock.block.getDefaultState();
 								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
 							}
 						}
