@@ -16,12 +16,14 @@ import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.monster.EndermiteEntity;
@@ -38,10 +40,13 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
 import net.mcreator.nh.entity.renderer.EndVillagerRenderer;
 import net.mcreator.nh.NhModElements;
+
+import java.util.Random;
 
 @NhModElements.ModElement.Tag
 public class EndVillagerEntity extends NhModElements.ModElement {
@@ -58,7 +63,7 @@ public class EndVillagerEntity extends NhModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -16777216, -10092442, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -205, -3407719, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("end_villager_spawn_egg"));
 	}
 
@@ -69,7 +74,7 @@ public class EndVillagerEntity extends NhModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 1, 2));
 	}
 
 	@Override
@@ -128,6 +133,11 @@ public class EndVillagerEntity extends NhModElements.ModElement {
 		}
 
 		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient"));
+		}
+
+		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 		}
@@ -141,9 +151,31 @@ public class EndVillagerEntity extends NhModElements.ModElement {
 		public boolean attackEntityFrom(DamageSource source, float amount) {
 			if (source.getImmediateSource() instanceof ArrowEntity)
 				return false;
+			if (source.getImmediateSource() instanceof PotionEntity)
+				return false;
 			if (source == DamageSource.DRAGON_BREATH)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Random random = this.rand;
+			Entity entity = this;
+			if (true)
+				for (int l = 0; l < 4; ++l) {
+					double d0 = (x + random.nextFloat());
+					double d1 = (y + random.nextFloat());
+					double d2 = (z + random.nextFloat());
+					int i1 = random.nextInt(2) * 2 - 1;
+					double d3 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d4 = (random.nextFloat() - 0.5D) * 0.5D;
+					double d5 = (random.nextFloat() - 0.5D) * 0.5D;
+					world.addParticle(ParticleTypes.ENCHANT, d0, d1, d2, d3, d4, d5);
+				}
 		}
 	}
 }

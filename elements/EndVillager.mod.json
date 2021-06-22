@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -16777216,
+      "value": -205,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10092442,
+      "value": -3407719,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -69,7 +69,7 @@
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
-    "immuneToPotions": false,
+    "immuneToPotions": true,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
     "immuneToTrident": false,
@@ -80,7 +80,7 @@
       "value": "Items.ENDER_PEARL"
     },
     "livingSound": {
-      "value": ""
+      "value": "block.conduit.ambient"
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
@@ -91,9 +91,9 @@
     "stepSound": {
       "value": ""
     },
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "ENCHANTMENT_TABLE"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -113,8 +113,8 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 4,
-    "maxNumberOfMobsPerGroup": 4,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 2,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:EndBiome"
