@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "nh:blocks/lead_ore_block",
+    "particle": "nh:blocks/lead_ore_block"
+  }
+}

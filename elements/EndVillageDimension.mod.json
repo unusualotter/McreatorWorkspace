@@ -7,7 +7,7 @@
         "value": "CUSTOM:EndBiome"
       }
     ],
-    "worldGenType": "Normal world gen",
+    "worldGenType": "End like gen",
     "mainFillerBlock": {
       "value": "Blocks.END_STONE"
     },

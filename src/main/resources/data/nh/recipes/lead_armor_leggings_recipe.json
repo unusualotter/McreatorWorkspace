@@ -1,0 +1,36 @@
+{
+  "group": "nh",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "nh:lead_ingot"
+    },
+    "1": {
+      "item": "nh:lead_ingot"
+    },
+    "2": {
+      "item": "nh:lead_ingot"
+    },
+    "3": {
+      "item": "nh:lead_ingot"
+    },
+    "5": {
+      "item": "nh:lead_ingot"
+    },
+    "6": {
+      "item": "nh:lead_ingot"
+    },
+    "8": {
+      "item": "nh:lead_ingot"
+    }
+  },
+  "result": {
+    "item": "nh:lead_armor_leggings",
+    "count": 1
+  }
+}
