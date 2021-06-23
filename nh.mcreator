@@ -600,6 +600,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enchanted_enderman"
+    },
+    {
+      "name": "EnchantedEndermanEntityIsHurt",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchanted_enderman_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

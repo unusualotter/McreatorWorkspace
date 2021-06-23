@@ -45,11 +45,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.nh.procedures.EnchantedEndermanEntityIsHurtProcedure;
 import net.mcreator.nh.item.SiliumSwordItem;
 import net.mcreator.nh.entity.renderer.EnchantedEndermanRenderer;
 import net.mcreator.nh.NhModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @NhModElements.ModElement.Tag
 public class EnchantedEndermanEntity extends NhModElements.ModElement {
@@ -168,6 +171,16 @@ public class EnchantedEndermanEntity extends NhModElements.ModElement {
 
 		@Override
 		public boolean attackEntityFrom(DamageSource source, float amount) {
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			Entity sourceentity = source.getTrueSource();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				EnchantedEndermanEntityIsHurtProcedure.executeProcedure($_dependencies);
+			}
 			if (source.getImmediateSource() instanceof ArrowEntity)
 				return false;
 			if (source.getImmediateSource() instanceof PotionEntity)
