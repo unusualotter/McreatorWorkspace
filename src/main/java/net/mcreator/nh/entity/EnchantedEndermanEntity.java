@@ -79,7 +79,7 @@ public class EnchantedEndermanEntity extends NhModElements.ModElement {
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 1, 1));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 4, 1, 1));
 	}
 
 	@Override
@@ -110,6 +110,7 @@ public class EnchantedEndermanEntity extends NhModElements.ModElement {
 			super(type, world);
 			experienceValue = 24;
 			setNoAI(false);
+			enablePersistence();
 			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(SiliumSwordItem.block, (int) (1)));
 		}
 
@@ -122,15 +123,21 @@ public class EnchantedEndermanEntity extends NhModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, EndermanEntity.class, false, false));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(4, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(5, new LookRandomlyGoal(this));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false));
 		}
 
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEAD;
+		}
+
+		@Override
+		public boolean canDespawn(double distanceToClosestPlayer) {
+			return false;
 		}
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
