@@ -3,14 +3,20 @@ package net.mcreator.nh.item;
 
 import net.minecraftforge.registries.ObjectHolder;
 
+import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
+import net.minecraft.client.util.ITooltipFlag;
 
 import net.mcreator.nh.NhModElements;
+
+import java.util.List;
 
 @NhModElements.ModElement.Tag
 public class EnderAppleItem extends NhModElements.ModElement {
@@ -27,13 +33,19 @@ public class EnderAppleItem extends NhModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.RARE)
-					.food((new Food.Builder()).hunger(4).saturation(2f).build()));
+					.food((new Food.Builder()).hunger(6).saturation(2f).build()));
 			setRegistryName("ender_apple");
 		}
 
 		@Override
 		public UseAction getUseAction(ItemStack itemstack) {
 			return UseAction.EAT;
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("It tastes like sweet water"));
 		}
 	}
 }

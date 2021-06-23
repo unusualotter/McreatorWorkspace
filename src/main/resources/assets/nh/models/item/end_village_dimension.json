@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "nh:items/silium_axe"
+    "layer0": "nh:items/staff_ding"
   }
 }

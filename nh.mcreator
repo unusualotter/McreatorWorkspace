@@ -591,6 +591,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "enderium_bricks_recipe"
+    },
+    {
+      "name": "EnchantedEnderman",
+      "type": "mob",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "enchanted_enderman"
     }
   ],
   "variable_elements": [],
@@ -617,6 +626,7 @@
       "item.nh.silium_axe": "Silium Axe",
       "block.nh.fridgium_stone": "Fridgium Stone",
       "item.nh.silium_shovel": "Silium Shovel",
+      "item.nh.enchanted_enderman_spawn_egg": "Enchanted Enderman Spawn Egg",
       "block.nh.ender_fence_gate": "Ender Fence Gate",
       "block.nh.lead_block": "Block of Lead",
       "biome.nh.end_biome": "End Forest",
@@ -628,6 +638,7 @@
       "block.nh.silium_ore": "Silium Ore",
       "block.nh.ender_stairs": "Ender Stairs",
       "item.nh.lead_sword": "Lead Sword",
+      "entity.nh.enchanted_enderman": "Enchanted Enderman",
       "item.nh.lead_armor_helmet": "Lead Helmet",
       "item.nh.ender_apple": "Ender Apple",
       "block.nh.ender_fence": "Ender Fence",

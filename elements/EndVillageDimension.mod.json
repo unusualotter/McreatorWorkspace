@@ -35,7 +35,7 @@
     "igniterTab": {
       "value": "TOOLS"
     },
-    "texture": "silium_axe",
+    "texture": "staff_ding",
     "portalTexture": "ender_leaves",
     "enablePortal": true
   }
